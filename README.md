@@ -118,7 +118,7 @@ It's not open source and I still don't fully trust it, considering the fact that
 
 *I did open the exe in Ghidra, and I was able to decipher some parts, but I'm not nearly skilled enough to understand everything that is going on, especially because it seems to be coded in pascal, making everything in Ghidra even more confusing.*
 
-*There is also a link in the executable that leads to a website that offers a Windows 7 Shell theme for Windows 10. And there is also a Russian alternative of the [site](https://startisback.com), which adds to the sketchiness. 
+*There is also a link in the executable that leads to a website that offers a Windows 7 Shell theme for Windows 10. And there is also a Russian alternative of the [site](https://startisback.com), which adds to the sketchiness.*
 
 But I think that I am on a good way.
 
