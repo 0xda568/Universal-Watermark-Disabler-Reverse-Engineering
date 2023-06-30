@@ -107,7 +107,7 @@ Okay now this proofs it but it's pretty boring, right? Now let's do something mo
 
 I found the String "Loaded", that was used somewhere in the DLL and passed it to the hooked **ExtTextOutW** function. Since it's an ASCII String and an UNICODE String is needed, surely something *interesting* will happen, right?
 
-![img1](assets/2023-06-30%2023-08-20.mp4)
+![vid1](assets/2023-06-30%2023-08-20.mp4)
 
 Yep, thats better. And this is something worth calling a PoC.
 
