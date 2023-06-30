@@ -1,3 +1,5 @@
+# Universal Watermark Disabler 
+
 ## 0x0 - Introduction
 After developing a fascination for windows rootkits and therefore kernel mode drivers, i came across the fact that you [need to active the test-signing mode](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/installing-an-unsigned-driver-during-development-and-test) to load your malicious driver. (Assuming that there is no exploit, allowing you to bypass this rule)
 
