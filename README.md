@@ -99,7 +99,7 @@ The construction was pretty simple and firstly, I wanted to see if the watermark
 
 So after exporting the modified DLL, replacing the real one and restarting explorer, the watermark actually reappears, proofing that this is what we have been looking for.
 
-![img1](2023-06-30 22-30-44_trimmed.mp4)
+![img1](assets/2023-06-30 22-30-44_trimmed.mp4)
 
 Okay now this proofs it but it's pretty boring, right? Now let's do something more fun. Let's take a random string that can be found in the DLL and let's pass it as an argument for every ExtTextOutW call.
 
@@ -107,7 +107,7 @@ Okay now this proofs it but it's pretty boring, right? Now let's do something mo
 
 I found the String "Loaded", that was used somewhere in the DLL and passed it to the hooked **ExtTextOutW** function. Since it's an ASCII String and an UNICODE String is needed, surely something *interesting* will happen, right?
 
-![img1](2023-06-30 23-08-20.mp4)
+![img1](assets/2023-06-30 23-08-20.mp4)
 
 Yep, thats better. And this is something worth calling a PoC.
 
