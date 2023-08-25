@@ -43,7 +43,7 @@ After that, everything was set up and I executed the software.
 
 The first thing that I checked was the network-activity. It turns out that the software had no network-activity at all, ruling out the possibility that it's a RAT or is somehow connected to a C2 Server, which was a good start.
 
-*(Since the software requires administrative privileges, it could theoretically be extremely sophisticated and counter monitoring attempts by delaying the communication with a C2 server for some time, before activating itself. The main purpose of this write-up, however, is no the proof the legitimacy of the software, but to find out how the watermark is removed.)*
+*(Since the software requires administrative privileges, it could theoretically be extremely sophisticated and counter monitoring attempts by delaying the communication with a C2 server for some time, before activating itself. The main purpose of this write-up, however, is not to proof the legitimacy of the software, but to find out how the watermark is removed.)*
 
 The interesting things happen when we take a look the the registry and file-system activity of the software.
 
@@ -51,7 +51,7 @@ The interesting things happen when we take a look the the registry and file-syst
 
 Firstly, the software creates a new dll file called **painter_x64.dll** in the System32 directory. This file is the most important part of the software and serves as a proxy-dll for **explorerframe.dll**, which is used by **explorer.exe**. 
 
-In order for **explorer.exe** to load **painter_x64.dll**, the CLSID entry of **explorerframe.exe** is replaced by the newly created dll file.
+In order for **explorer.exe** to load **painter_x64.dll**, the CLSID entry of **explorerframe.dll** is replaced by the newly created dll file.
 
 ![img1](assets/Pasted%20image%2020230630212947.png)
 
