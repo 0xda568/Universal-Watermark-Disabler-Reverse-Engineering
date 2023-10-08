@@ -14,7 +14,9 @@ For people who simply want to get rid of an annoying watermark - this may or may
 The software behaves pretty much like textbook malware.
 
 **Dropper**: The main .exe is a dropper which downloads a DLL that gets injected into the explorer.
+
 **Persistence**: For persistence, the software utilizes COM-Hijacking and DLL-proxying. It hijacks the explorerframe COM-server and proxies all needed functions to explorerframe.dll.
+
 **Function**: The DLL iteslf hooks ExtTextOut and checks wether the string that got passed are kown watermarks.
 
 ## 0x0 - Introduction
