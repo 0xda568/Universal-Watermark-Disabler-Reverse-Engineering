@@ -1,5 +1,22 @@
 # Universal Watermark Disabler 
 
+## 0xFFFF - Preface
+
+In this writeup, I show you how I reverse-engineered the [Windows Watermark Disabler](https://winaero.com/download-universal-watermark-disabler/).
+
+### Message for Reverse Engineers
+I created this writeup on the beginning of my Malware / Reverse-Engineering journey, so if you find yourself in a similar position and you don't quite know how to get started, this should be able to help you out.
+
+### Message for Users
+For people who simply want to get rid of an annoying watermark - this may or may not be malware. It has a lot of downloads, so neither Windows nor Chrome flags it as malware and the DLL that gets injected into the explorer is signed by the author.
+
+### TL;DR with technical terms
+The software behaves pretty much like textbook malware.
+
+**Dropper**: The main .exe is a dropper which downloads a DLL that gets injected into the explorer.
+**Persistence**: For persistence, the software utilizes COM-Hijacking and DLL-proxying. It hijacks the explorerframe COM-server and proxies all needed functions to explorerframe.dll.
+**Function**: The DLL iteslf hooks ExtTextOut and checks wether the string that got passed are kown watermarks.
+
 ## 0x0 - Introduction
 After developing a fascination for Windows rootkits and therefore kernel mode drivers, i came across the fact that you [need to active the test-signing mode](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/installing-an-unsigned-driver-during-development-and-test) to load your malicious driver. (Assuming that there is no exploit, allowing you to bypass this rule)
 
