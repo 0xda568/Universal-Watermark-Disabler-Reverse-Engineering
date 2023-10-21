@@ -139,4 +139,4 @@ It's not open source and I still don't fully trust it, considering the fact that
 
 *There is also a link in the executable that leads to a website that offers a Windows 7 Shell theme for Windows 10. And there is also a Russian alternative of the [site](https://startisback.com), which adds to the sketchiness, considering the country's malware laws.*
 
-I will also probably release my own version of the Watermark remover, that works pretty much the same, but is open source.
+You can find my open-source version of the testsigning-mode watermark remover [here](https://github.com/0xda568/uwd-oss)
